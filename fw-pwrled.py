@@ -23,7 +23,6 @@ while True:
         battery_status = status_file.read().strip()
     if battery_status == "Charging" and enable_green_during_charge:
         os.system("sudo ectool led power green")
-        print("green")
     else:
         # Get battery percentage from the appropriate BAT# file (/capacity) - placed here in the else statement
         # (instead of using an elif) to avoid unnecessary reads from disk
