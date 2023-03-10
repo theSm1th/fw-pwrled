@@ -1,0 +1,9 @@
+[Unit]
+Description=FW power led colour changer
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python ##Location of fw-pwrled.py goes here##
+
+[Install]
+WantedBy=multi-user.target
